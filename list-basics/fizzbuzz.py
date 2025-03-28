@@ -45,3 +45,33 @@ for no in range(1, no+1):
 
 
 # print(fizzbuzz(int(input())))
+
+"""
+Adding The Twist
+
+Challenge
+Add a small twist to the game:
+Numbers that contain the digit "3" but aren't divisible by 3 or 7 will output Almost Fizz
+To check if a string contains a char use in for instance, "a" in word
+"""
+
+print("Welcome to FizzBuzz!")
+
+def fizzbuzz(n):
+    if  n % 3 == 0 and n % 7 == 0:
+        return "FizzBuzz"
+    if n % 3 == 0:
+        return "Fizz"
+    if n % 7 == 0:
+        return "Buzz"
+    else:
+        if "3" in str(3):
+            return "Almost Fizz"
+        return str(n)
+
+no = int(input())
+for no in range(1, no+1):
+    print(fizzbuzz(no))
+
+
+# print(fizzbuzz(int(input())))
